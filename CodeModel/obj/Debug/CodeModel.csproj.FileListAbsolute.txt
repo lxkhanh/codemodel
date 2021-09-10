@@ -1,0 +1,9 @@
+D:\Workspaces\Products\OpenTestSystem\trunk\src\Dotnet\CodeModel\bin\Debug\CodeModel.dll.config
+D:\Workspaces\Products\OpenTestSystem\trunk\src\Dotnet\CodeModel\bin\Debug\CodeModel.dll
+D:\Workspaces\Products\OpenTestSystem\trunk\src\Dotnet\CodeModel\bin\Debug\CodeModel.pdb
+D:\Workspaces\Products\OpenTestSystem\trunk\src\Dotnet\CodeModel\bin\Debug\Ionic.Zip.dll
+D:\Workspaces\Products\OpenTestSystem\trunk\src\Dotnet\CodeModel\obj\Debug\CodeModel.csprojAssemblyReference.cache
+D:\Workspaces\Products\OpenTestSystem\trunk\src\Dotnet\CodeModel\obj\Debug\CodeModel.csproj.CoreCompileInputs.cache
+D:\Workspaces\Products\OpenTestSystem\trunk\src\Dotnet\CodeModel\obj\Debug\CodeModel.csproj.CopyComplete
+D:\Workspaces\Products\OpenTestSystem\trunk\src\Dotnet\CodeModel\obj\Debug\CodeModel.dll
+D:\Workspaces\Products\OpenTestSystem\trunk\src\Dotnet\CodeModel\obj\Debug\CodeModel.pdb

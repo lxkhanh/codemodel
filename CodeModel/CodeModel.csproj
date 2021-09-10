@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{95678BF6-6A52-4267-8C44-31F3041F2EF0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CodeModel</RootNamespace>
+    <AssemblyName>CodeModel</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>3</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Delivery</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{95678BF6-6A52-4267-8C44-31F3041F2EF0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CodeModel</RootNamespace>
+    <AssemblyName>CodeModel</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Delivery|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Delivery\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>3</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DeliveryObfuscated|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\DeliveryObfuscated\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ionic.Zip, Version=1.9.1.5, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassType.cs" />
+    <Compile Include="CodeWriter.cs" />
+    <Compile Include="DynamicProxy\IProxyInvocationHandler.cs" />
+    <Compile Include="DynamicProxy\MetaDataFactory.cs" />
+    <Compile Include="DynamicProxy\ProxyFactory.cs" />
+    <Compile Include="DynamicProxy\SecurityManager.cs" />
+    <Compile Include="DynamicProxy\SecurityProxy.cs" />
+    <Compile Include="fmt\JBinaryFile.cs" />
+    <Compile Include="fmt\JPropertyFile.cs" />
+    <Compile Include="fmt\JSerializedObject.cs" />
+    <Compile Include="fmt\JStaticFile.cs" />
+    <Compile Include="fmt\JStaticJavaFile.cs" />
+    <Compile Include="fmt\JTextFile.cs" />
+    <Compile Include="fmt\SecureLoader.cs" />
+    <Compile Include="JAnnotatable.cs" />
+    <Compile Include="JAnnotationArrayMember.cs" />
+    <Compile Include="JAnnotationStringValue.cs" />
+    <Compile Include="JAnnotationUse.cs" />
+    <Compile Include="JAnnotationValue.cs" />
+    <Compile Include="JAnnotationWriter.cs" />
+    <Compile Include="JAnonymousClass.cs" />
+    <Compile Include="JArray.cs" />
+    <Compile Include="JArrayClass.cs" />
+    <Compile Include="JArrayCompRef.cs" />
+    <Compile Include="JAssignment.cs" />
+    <Compile Include="JAssignmentTarget.cs" />
+    <Compile Include="JAtom.cs" />
+    <Compile Include="JBlock.cs" />
+    <Compile Include="JBreak.cs" />
+    <Compile Include="JCase.cs" />
+    <Compile Include="JCast.cs" />
+    <Compile Include="JCatchBlock.cs" />
+    <Compile Include="JClass.cs" />
+    <Compile Include="JClassAlreadyExistsException.cs" />
+    <Compile Include="JClassContainer.cs" />
+    <Compile Include="JCodeModel.cs" />
+    <Compile Include="JCommentPart.cs" />
+    <Compile Include="JConditional.cs" />
+    <Compile Include="JContinue.cs" />
+    <Compile Include="JDeclaration.cs" />
+    <Compile Include="JDefinedClass.cs" />
+    <Compile Include="JDirectClass.cs" />
+    <Compile Include="JDocComment.cs" />
+    <Compile Include="JDocCommentable.cs" />
+    <Compile Include="JDoLoop.cs" />
+    <Compile Include="JEnumConstant.cs" />
+    <Compile Include="JExpr.cs" />
+    <Compile Include="JExpression.cs" />
+    <Compile Include="JExpressionImpl.cs" />
+    <Compile Include="JFieldRef.cs" />
+    <Compile Include="JFieldVar.cs" />
+    <Compile Include="JForEach.cs" />
+    <Compile Include="JForLoop.cs" />
+    <Compile Include="JFormatter.cs" />
+    <Compile Include="JGenerable.cs" />
+    <Compile Include="JGenerifiable.cs" />
+    <Compile Include="JGenerifiableImpl.cs" />
+    <Compile Include="JInvocation.cs" />
+    <Compile Include="JJavaName.cs" />
+    <Compile Include="JLabel.cs" />
+    <Compile Include="JMethod.cs" />
+    <Compile Include="JMod.cs" />
+    <Compile Include="JMods.cs" />
+    <Compile Include="JNarrowedClass.cs" />
+    <Compile Include="JNullType.cs" />
+    <Compile Include="JOp.cs" />
+    <Compile Include="JPackage.cs" />
+    <Compile Include="JPrimitiveType.cs" />
+    <Compile Include="JResourceFile.cs" />
+    <Compile Include="JReturn.cs" />
+    <Compile Include="JStatement.cs" />
+    <Compile Include="JStringLiteral.cs" />
+    <Compile Include="JSwitch.cs" />
+    <Compile Include="JThrow.cs" />
+    <Compile Include="JTryBlock.cs" />
+    <Compile Include="JType.cs" />
+    <Compile Include="JTypeVar.cs" />
+    <Compile Include="JTypeWildcard.cs" />
+    <Compile Include="JVar.cs" />
+    <Compile Include="JWhileLoop.cs" />
+    <Compile Include="package-info.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SecureLoader.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="TypedAnnotationWriter.cs" />
+    <Compile Include="util\ClassNameComparator.cs" />
+    <Compile Include="util\EncoderFactory.cs" />
+    <Compile Include="util\JavadocEscapeWriter.cs" />
+    <Compile Include="util\MathUtil.cs" />
+    <Compile Include="util\UnicodeEscapeWriter.cs" />
+    <Compile Include="writer\FileCodeWriter.cs" />
+    <Compile Include="writer\FilterCodeWriter.cs" />
+    <Compile Include="writer\OutputStreamCodeWriter.cs" />
+    <Compile Include="writer\ProgressCodeWriter.cs" />
+    <Compile Include="writer\PrologCodeWriter.cs" />
+    <Compile Include="writer\SingleStreamCodeWriter.cs" />
+    <Compile Include="writer\ZipCodeWriter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="CodeModel.nrproj" />
+    <None Include="key.snk" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>if $(ConfigurationName) == DeliveryObfuscated dotNET_Reactor.exe -project "$(ProjectDir)$(TargetName).nrproj"
+</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
